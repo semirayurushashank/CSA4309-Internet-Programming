@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+    }
+     
+    body {
+     background-color: #f8f9fa;
+     background-image: url('transport[1].jpeg');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     color: #212529;
+     line-height: 1.6;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+    }
+     
+    /* Header and Footer Styling */
+    .header, .footer {
+     background-color: #343a40;
+     color: #030101d9;
+     padding: 1rem 2rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     position: relative;
+     z-index: 1;
+    }
+    
+    .header .navbar a {
+     color: #ffc107;
+     text-decoration: none;
+     margin: 0 15px;
+     font-size: 1.1rem;
+     transition: color 0.3s;
+    } 
+    .header .navbar a:hover {
+     color: #fff;
+    }
+    
+    /* Form and Booking Container */
+    .form-container, .booking-form {
+     background: #fff;
+     padding: 40px;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     width: 100%;
+     max-width: 600px;
+     margin: 40px auto;
+    }
+    
+    /* Input Fields Styling */
+    input[type="text"], input[type="password"], input[type="email"], select {
+     width: calc(100% - 20px);
+     padding: 10px;
+     margin-bottom: 15px;
+     border-radius: 5px;
+      border: 1px solid #ccc;
+     font-size: 1rem;
+    }
+    
+    /* Submit Button Styling */
+    input[type="submit"], .btn {
+     background: #007bff;
+     color: #fff;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 1.1rem;
+     transition: background 0.3s, transform 0.2s;
+    }
+    
+    input[type="submit"]:hover, .btn:hover {
+     background: #0056b3;
+     transform: scale(1.05);
+    }
+    
+    /* Footer Styling */
+    .footer {
+     text-align: center;
+     padding: 20px 0;
+    background: #343a40;
+     color: #ffc107;
+     margin-top: auto;
+     width: 100%;
+    }
+    
+    /* Container to center page content */
+    .main-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 2rem;
+     flex-grow: 1;
+     text-align: center;
+     width: 100%;
+    }
+    
+    /* Logo Text */
+    .logo-text h2 {
+     color: white;
+    font-size: 3rem;
+    }
+    
+    .logo-text h2 span {
+     color: #ffc61a;
+    }
+    
+    .navbar.active {
+     top: 10%;
+    }
+    
+    .body-structure {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: calc(100vh - 160px); /* Adjusted to fit header and footer */
+     text-align: center;
+     padding: 2rem;
+     color: white;
+     background: rgba(0, 0, 0, 0.4);
+     border-radius: 15px;
+    }
+    
+    .body-structure h1 {
+     font-size: 4.5rem;
+     margin-bottom: 1rem;
+     color: #000000;
+     font-weight: bold;
+    }
+    
+    .body-structure p {
+     font-size: 2rem;
+     max-width: 600px;
+     line-height: 1.6;
+    }
+    
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+     .header .logo-text h2 {
+     font-size: 2rem;
+     }
+ .navbar {
+     display: none;
+    }
+     #menu-bars {
+     display: block;
+     }
+    .body-structure h1 {
+     font-size: 3.5rem;
+     }
+     .body-structure p {
+     font-size: 1.6rem;
+     }
+    }
+    

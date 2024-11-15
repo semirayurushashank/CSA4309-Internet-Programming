@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flights - TRAVEL BUDDY.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-text">
+            <h2>TRAVEL BUDDY <span>.com</span></h2>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="flights.html">Flights</a>
+            <a href="trains.html">Trains</a>
+            <a href="buses.html">Buses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="#" id="menu-bars" class="fas fa-bars"></a>
+    </header>
+
+    <div class="body-structure">
+        <div class="form-container">
+            <h1>Book a Train</h1>
+            <form action="book.php" method="post">
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter Desired Destination" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <input type="hidden" name="type" value="trains">
+                <input type="submit" value="Search trains">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
